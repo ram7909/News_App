@@ -4,8 +4,7 @@ const News = () => {
     const [news, setNews] = useState([])
     const fetchData = async (category) => {
         const apiKey = 'e519bc933e8641c0b7ef243d14da2fb5'
-        const data = await fetch(`https://newsapi.org/v2/everything?q=tesla&from=2024-06-08&sortBy=publishedAt&apiKey=e519bc933e8641c0b7ef243d14da2fb5`)
-        // const data = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${apiKey}`)
+        const data = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${apiKey}`)
         const result = await data.json();
         setNews(result.articles)
         console.log(result.articles);
