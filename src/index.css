@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: black;
+  color: white;
+}
+input:focus{
+  outline: none;
+}
+input::placeholder{
+  color: white;
+}
+input{
+  background-color: black;
+  border: none;
+  border-bottom: 2px solid yellow;
+}
